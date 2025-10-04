@@ -32,12 +32,16 @@ const Header = () => {
         </div>
 
         <div className="flex flex-1 items-center justify-end gap-1">
-          <Link href="/dashboard">
-            <Button variant="outline" className="text-black dark:text-white">
+          <Button
+            asChild
+            variant="outline"
+            className="text-black dark:text-white"
+          >
+            <Link href="/dashboard">
               <BarChart3 className="size-4" />
               <span className="sr-only md:not-sr-only md:ml-2">Dashboard</span>
-            </Button>
-          </Link>
+            </Link>
+          </Button>
 
           <ThemeToggle />
 
